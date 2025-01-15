@@ -1,0 +1,25 @@
+{
+  "name": "react-sample-examples",
+  "version": "1.0.0",
+  "description": "**Namasthe React**",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MounikaBeerelly/react-sample-examples.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Mounika Beerelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MounikaBeerelly/react-sample-examples/issues"
+  },
+  "homepage": "https://github.com/MounikaBeerelly/react-sample-examples#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
