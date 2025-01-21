@@ -1,39 +1,39 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// const heading = React.createElement(
-//     "h1",
-//     { id: "heading"},
-//     "Hello World from React...");
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(heading);
+// React.createElement  => object => HTMLElement(render)
 
-// const parent = React.createElement(
-//     "div", 
-//     { id: "parent" }, 
-//     React.createElement(
-//         "div", 
-//         { id: "child" },
-//         React.createElement("h1",{}, "I am an H1 tag")
-//     )
-// );
-
-const parent = React.createElement(
-    "div", 
-    { id: "parent" }, 
-    [React.createElement(
-        "div", 
-        { id: "child1" },
-        [ React.createElement("h1",{}, "I am an H1 tag"),
-          React.createElement("h2",{},"I am an h2 tag")]
-    ),
-    React.createElement(
-        "div", 
-        { id: "child2" },
-        [ React.createElement("h1",{}, "I am an H1 tag"),
-          React.createElement("h2",{},"I am an h2 tag")]
-    )]
+// react element
+const jsxHeading = (
+  <h1 is="heading" tabIndex="5">
+    This is a JSX heading
+  </h1>
 );
 
+const Title = () => {
+  return (
+    <h1 id="heading">This is a Title Component</h1>
+  )
+}
+
+const number = 9234453;
+
+// Functional Component
+const HeadingComponent = () => {
+  return (
+    <div>
+      <Title /> {/* Component Composition */}
+      <h1>This is a Functional Component</h1>
+      {jsxHeading} {/* returning react element inside component */}
+      {number}
+    </div>
+  )
+};
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+
+// render react element
+root.render(jsxHeading);
+
+// render react component
+root.render(<HeadingComponent />);

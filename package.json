@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "**Namasthe React**",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -23,7 +25,9 @@
     "process": "^0.11.10"
   },
   "dependencies": {
+    "formik": "^2.4.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
-  }
+  },
+  "browsersList": {}
 }
