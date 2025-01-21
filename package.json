@@ -2,7 +2,6 @@
   "name": "react-sample-examples",
   "version": "1.0.0",
   "description": "**Namasthe React**",
-  "main": "App.js",
   "scripts": {
     "test": "jest"
   },

@@ -28,4 +28,18 @@
     - local server
     - HMR (Hot Module Replacement) : automatically refresh the page
     - Parcel uses File Matching Algorithm - written in C++
+    - Caching - faster builds
+    - Image Optimization 
+    - Minification
+    - Bundle all the files
+    - Compress the files
+    - Consistent Hashing
+    - Code Splitting
+    - Differential Bundling - support older browsers
+    - Diagnostic
+    - Error Handling
+    - HTTPs
+    - Tree Shaking - remove unused code
+    - Creates different dev and prod bundles
+    - production build **npx parcel build index.html**
     
