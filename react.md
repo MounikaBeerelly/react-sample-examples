@@ -14,7 +14,7 @@
     - JSX transpiled before it reaches the JS engine.
     - Write attributes in JSX as camelcase.
     - If we are writing multiple lines of code, wrap that code with round brackets.
-    - prevents cross-side scripting.
+    - prevents cross-site scripting.
 
 - **Babel** :
     - Opensource JavaScript compiler/transpiler.
@@ -29,3 +29,11 @@
 
 **Component Composition** : component inside another component
     - Composing one component into another
+
+**Props** - Passing argument to a function.
+
+**Config driven UI** - our websites driven by data/config.
+
+**Keys** - keys are unique identifier, which are used to identify the which item is inserted, deleted and updated in an array.
+    - index: we can use index as key. Its not recommended to use index as keys.
+    - https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/
