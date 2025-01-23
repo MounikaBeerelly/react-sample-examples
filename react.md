@@ -35,5 +35,27 @@
 **Config driven UI** - our websites driven by data/config.
 
 **Keys** - keys are unique identifier, which are used to identify the which item is inserted, deleted and updated in an array.
-    - index: we can use index as key. Its not recommended to use index as keys.
-    - https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/
+- index: we can use index as key. Its not recommended to use index as keys.
+- https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/
+
+**State** : 
+
+## React Hooks :
+- React is efficient/faster in DOM manipulation.
+- React uses virtual DOM.
+- Hooks are normal Javascript utility functions, written by facebook developers.
+- There are 2 very important hooks:
+    - useState() hook
+    - useEffect() hook
+- **useState hook**: Superpowerful state variables in react
+    - It maintains the state of the component.
+    - Pass the default value to the variable in the useState hook.
+    - Whenever the state variable updates, React re-renders the component.
+    - `const [state, setState] = useState()`;
+    - Whenever the state variable changes, setState function triggers and updates the component.
+
+**Reconciliation Alogorithm** also known as React Fiber
+   - ***VirtualDOM*** is a visual representation of actual DOM. It is kind of a normal JavaScript object.
+   - ***Diff Algorithm*** 
+    - This new algorithm came in React 16.
+    - Whenever there is any change in state variable, React finds the difference between the previous virtualDOM and updated virtualDOM. Then it will calculate the difference and renders the changes.
