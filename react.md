@@ -39,6 +39,7 @@
 - https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/
 
 **State** : 
+ - Whenever a state variable update, react triggers a reconciliation cycle (re-renders the component)
 
 ## React Hooks :
 - React is efficient/faster in DOM manipulation.
@@ -53,6 +54,11 @@
     - Whenever the state variable updates, React re-renders the component.
     - `const [state, setState] = useState()`;
     - Whenever the state variable changes, setState function triggers and updates the component.
+- **useEffect hook**:
+    - It is a normal function, it contains 2 arguments - callback function and dependency array.
+    - once the component rendered, the callback function called.
+    - `useEffect( () => { }, []);`
+    - ***fetch*** fetch from api
 
 **Reconciliation Alogorithm** also known as React Fiber
    - ***VirtualDOM*** is a visual representation of actual DOM. It is kind of a normal JavaScript object.

@@ -41,5 +41,5 @@
     - HTTPs
     - Tree Shaking - remove unused code
     - Creates different dev and prod bundles
-    - production build **npx parcel build index.html**
+    - production build `npx parcel build index.html`
     
