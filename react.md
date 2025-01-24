@@ -54,14 +54,24 @@
     - Whenever the state variable updates, React re-renders the component.
     - `const [state, setState] = useState()`;
     - Whenever the state variable changes, setState function triggers and updates the component.
+    - Always call the useState hook inside and top of the functional component.
+    - Never create useState hook inside the if-else condition and for loops. It will create inconsistency in the program.
 - **useEffect hook**:
     - It is a normal function, it contains 2 arguments - callback function and dependency array.
     - once the component rendered, the callback function called.
     - `useEffect( () => { }, []);`
-    - ***fetch*** fetch from api
+    - ***fetch*** fetch data from api
+    - if no dependency array => useEffect is called every render.
+    - if dependency array is empty, useEffect is called only initial render (just once).
+    - If dependency array contains some state, useEffect is called everytime whenever the state changes.
 
 **Reconciliation Alogorithm** also known as React Fiber
    - ***VirtualDOM*** is a visual representation of actual DOM. It is kind of a normal JavaScript object.
    - ***Diff Algorithm*** 
     - This new algorithm came in React 16.
     - Whenever there is any change in state variable, React finds the difference between the previous virtualDOM and updated virtualDOM. Then it will calculate the difference and renders the changes.
+
+**Routes** : react-router-dom library
+- `createBrowserRouter` is the recommended router for all the react applications.
+- react-router-dom creates error page by default.
+- useRouteError hook is used to give the complete details about error.
