@@ -75,3 +75,9 @@
 - `createBrowserRouter` is the recommended router for all the react applications.
 - react-router-dom creates error page by default.
 - useRouteError hook is used to give the complete details about error.
+- `outlet component` is replaced the component.
+- `Link` is wrapper over anchor tag. It is a superpower given by react-router-dom.
+- **two types of routing in web apps**
+1. Client side routing: 
+    - with one page, we can interchange components.
+2. Server side routing: Load the component with network call
