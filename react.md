@@ -80,4 +80,17 @@
 - **two types of routing in web apps**
 1. Client side routing: 
     - with one page, we can interchange components.
-2. Server side routing: Load the component with network call
+2. Server side routing: Load the component with network call.
+
+## Class Based Components:
+ - Never directly update the state variables.
+- **Life cycle Methods**:
+   -  https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+    1. Mounting
+        - `constructor()` method called first
+        - then `render()` method called
+        - `ComponentDidMount()` once the component is completely mounted, then ComponentDidMount() method called.
+        - ComponentdidMount() is used to make the api calls, .
+    2. Updating
+    3. UnMounting
+        - ComponentWillUnMount() is called when when removing the component
