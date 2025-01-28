@@ -94,3 +94,7 @@
     2. Updating
     3. UnMounting
         - ComponentWillUnMount() is called when when removing the component
+
+- **Modularity**: Breakdown the code into small pieces of modules.
+- Code become readable, reusable and testable
+- **Code Splitting/Chunking/Dynamic Bundling/Lazy Loaing**: breakdown the app into smaller chunks. Render the modules whenever it is needed. This is also called on-demand loading.
