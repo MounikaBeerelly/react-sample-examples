@@ -98,3 +98,14 @@
 - **Modularity**: Breakdown the code into small pieces of modules.
 - Code become readable, reusable and testable
 - **Code Splitting/Chunking/Dynamic Bundling/Lazy Loaing**: breakdown the app into smaller chunks. Render the modules whenever it is needed. This is also called on-demand loading.
+
+**Higher Order Components**: 
+    - HOC is a function, that takes component, enhances that component and returns back that component.
+    - 
+**Lifting State Up**:
+- Controlled Components: it doesn't have own state. it controls by parent component.
+- Uncontrolled Components: It manages the own state
+
+**Prop Drilling**:
+- Passing data from parent to children via intermediate child links.
+- Context API solves prop drilling issue.
