@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../index.css';
 
-const Countercomponent = () => {
+const CounterComponent = () => {
     const [counter, setcounter] = useState(0);
 
     const handleIncrement = () => {
@@ -13,7 +13,7 @@ const Countercomponent = () => {
     }
 
     const handleReset = () => {
-        setcounter(counter)
+        setcounter(0)
     }
     return (
         <div style = {{ textAlign : 'center'}}>
@@ -35,4 +35,4 @@ const Countercomponent = () => {
     )
 }
 
-export default Countercomponent;
+export default CounterComponent;

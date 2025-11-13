@@ -1,11 +1,14 @@
 import React from 'react';
-import Countercomponent from './Components/counterComponent';
+import CounterComponent from './Components/counterComponent';
+import FetchUsersComponent from './Components/FetchUsersComponent';
 
 const App = () => {
   return (
     <div>
       <h1>Hello React...</h1>
-      <Countercomponent />
+      <CounterComponent />
+      <hr/>
+      <FetchUsersComponent />
     </div>
   );
 }
