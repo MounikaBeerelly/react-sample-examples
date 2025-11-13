@@ -2,6 +2,7 @@ import React from 'react';
 import CounterComponent from './Components/counterComponent';
 import FetchUsersComponent from './Components/FetchUsersComponent';
 import FormComponent from './Components/FormComponent';
+import ConditionalRenderingComponent from './Components/ConditionalRenderingComponent';
 
 const App = () => {
   return (
@@ -12,6 +13,8 @@ const App = () => {
       <FetchUsersComponent />
       <hr/>
       <FormComponent />
+      <hr/>
+      <ConditionalRenderingComponent />
     </div>
   );
 }
