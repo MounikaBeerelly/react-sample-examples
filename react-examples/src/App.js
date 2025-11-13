@@ -8,11 +8,14 @@ import ToggleComponent from './Components/ToggleComponent';
 import SearchBarComponent from './Components/SearchbarComponent';
 import DropdownMenuComponent from './Components/DropdownMenuComponent';
 import TabsComponent from './Components/TabsComponent';
+import FormikComponent from './Components/FormComponent/FormComponent';
 
 const App = () => {
   return (
     <div>
       <h1>Hello React...</h1>
+      <FormikComponent />
+      <hr/>
       <TabsComponent />
       <hr />
       <DropdownMenuComponent />
