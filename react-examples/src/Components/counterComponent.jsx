@@ -16,7 +16,8 @@ const CounterComponent = () => {
         setcounter(0)
     }
     return (
-        <div style = {{ textAlign : 'center'}}>
+        <div>
+            <h1 style = {{ textAlign : 'center'}}>Counter Component</h1>
             <h2> Count : {counter}</h2>
             <div className="button-group">
                 <button onClick={handleIncrement}>
