@@ -8,6 +8,19 @@ export const fetchUsers = createAsyncThunk(
     }
 );
 
+export const addUser = createAsyncThunk(
+    "users/addUser",
+    async(newUser) => {
+        const response = await fetch("https://jsonplaceholder.typicode.com/users", {
+            method : 'POST',
+            headers : { "Content-type" : "application/json"},
+            body : JSON.stringify(newUser)
+        });
+
+        return response.json();
+    }
+);
+
 const userSlice = createSlice({
     name: "users",
     initialState : {
@@ -27,7 +40,20 @@ const userSlice = createSlice({
       .addCase(fetchUsers.rejected, (state) => {
         state.loading = false;
         state.error = "Failed to fetch users";
+      })
+      
+      .addCase(addUser.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(addUser.fulfilled, (state,action) => {
+        state.loading = false;
+        state.users.push(action.payload);
+      })
+      .addCase(addUser.rejected, (state) => {
+        state.loading = false;
+        state.error = "Failed to load data";
       });
+      
   }
 });
 
