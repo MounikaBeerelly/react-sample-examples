@@ -9,11 +9,15 @@ import SearchBarComponent from './Components/SearchbarComponent';
 import DropdownMenuComponent from './Components/DropdownMenuComponent';
 import TabsComponent from './Components/TabsComponent';
 import FormikComponent from './Components/FormComponent/FormComponent';
+import RoutingComponent from './React-Routing/Routing';
 
 const App = () => {
   return (
     <div>
       <h1>Hello React...</h1>
+      <RoutingComponent />
+      <br />
+      <hr />
       <FormikComponent />
       <hr/>
       <TabsComponent />
