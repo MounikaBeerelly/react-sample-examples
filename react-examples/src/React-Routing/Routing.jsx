@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from "react";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import NavBarComponent from './Navbar';
 import HomeComponent from './Home';
 import Aboutcompoennt from './About';
@@ -12,7 +12,7 @@ const UsersComponent = lazy(() => import ("./UsersComponent"));
 
 const RoutingComponent = () => {
     return (
-        <BrowserRouter>
+        <>
             <NavBarComponent />
             <Routes>
                 <Route path = "/" element={<HomeComponent />} />
@@ -37,7 +37,7 @@ const RoutingComponent = () => {
 
                 <Route path="*" element={<NotFoundComponent />} />
             </Routes>
-        </BrowserRouter>
+        </>
     );
 }
 
