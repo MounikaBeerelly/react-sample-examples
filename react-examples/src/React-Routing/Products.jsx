@@ -14,7 +14,7 @@ const ProductsComponent = () => {
             <h1 className="p-4 text-2xl">Products Page</h1>
             <ul style={{padding:'2px'}}>
                  {sampleProducts?.map((item) => (
-                    <li key={item.id}>
+                    <li key={item.id} data-testid="product-item">
                         <Link style={{color:'blue'}} to={`/products/${item.id}`}>{item.name}</Link>
                     </li>
                     ))}
