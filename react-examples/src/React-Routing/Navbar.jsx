@@ -19,8 +19,11 @@ const NavBarComponent = () => {
                 <NavLink to="/contact" style={({isActive}) => (isActive ? activeStyle : {})}>
                     Contact
                 </NavLink>
-                <NavLink to="products" style={({isActive}) => isActive ? activeStyle : {}}>
+                <NavLink to="/products" style={({isActive}) => isActive ? activeStyle : {}}>
                     Products
+                </NavLink>
+                <NavLink to="/users" style={({isActive}) => isActive ? activeStyle : {}}>
+                    Users
                 </NavLink>
                 <NavLink to="/dashboard" style={({isActive}) => (isActive ? activeStyle : {})}>
                     Dashboard

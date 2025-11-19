@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBarComponent from './Navbar';
 import HomeComponent from './Home';
@@ -8,6 +8,7 @@ import ProductsComponent from './Products';
 import ProductDetailsComponent from './ProductDetails';
 import DashboardLayoutComponent from './DashboardLayout';
 import NotFoundComponent from './NotFound';
+const UsersComponent = lazy(() => import ("./UsersComponent"));
 
 const RoutingComponent = () => {
     return (
@@ -20,6 +21,14 @@ const RoutingComponent = () => {
 
                 <Route path="/products" element={<ProductsComponent />} />
                 <Route path="/products/:id" element={<ProductDetailsComponent />} />
+                
+                <Route 
+                    path="/users" 
+                    element={
+                        <Suspense fallback={<h3>Loading...</h3>}>
+                            <UsersComponent />
+                        </Suspense>
+                    } />
 
                 <Route path="/dashboard" element={<DashboardLayoutComponent />}>
                     <Route path="stats" element={<h2>Dashboard stats page</h2>} />
