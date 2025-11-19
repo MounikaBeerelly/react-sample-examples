@@ -8,3 +8,4 @@ test("Navbar renders link", () => {
 
     expect(screen.getByText(/dashboard layout/i)).toBeInTheDocument();
 });
+

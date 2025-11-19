@@ -11,13 +11,14 @@ import DropdownMenuComponent from "./Components/DropdownMenuComponent";
 import TabsComponent from "./Components/TabsComponent";
 import FormComponent02 from "./Components/FormComponent/FormComponent";
 import RoutingComponent from "./React-Routing/Routing";
+import ChatApp from "./Chatbot/ChatApp";
 
 const App = () => {
   return (
     <div>
       <h1>Hello React...</h1>
-
-      <BrowserRouter>
+      <ChatApp />
+      {/* <BrowserRouter>
         <RoutingComponent />
       </BrowserRouter>
       <hr />
@@ -41,7 +42,7 @@ const App = () => {
         <FormComponent01 />
         <hr />
         <ConditionalRenderingComponent />
-      </div>
+      </div> */}
     </div>
   );
 };
